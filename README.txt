@@ -1,7 +1,8 @@
-
+Se programó un intérprete de comandos usando Bison y Lex. 
+Se incluye un makefile para compilarlo.
 
 |----------------------------------------------------------|
-|														   |
+|							   |
 |    .d88888b  oo              .88888.                     |
 |    88.    '                 d8'   8b                     |
 |    `Y88888b. dP .d8888b.    88     88 88d888b. .d8888b.  |
@@ -15,7 +16,7 @@
 
 
 Es importante notar que denotamos al comando "2>&1 | " con el símbolo "*".
-El cambio de notación anterior pretende facilitar las priebas.
+El cambio de notación anterior pretende facilitar las pruebas.
 Se implementaron los soguientes comandos:
 	
 	Denotamos A [comando] B a la estructura general de un comando
@@ -31,7 +32,7 @@ int.y, lex.yy.c, Makefile, tok.l, ytab.c y ytab.h del repositorio y ejecutar
 el comando make en el dirctorio. Después del make se ejecuta ./interp para
 iniciar el intérprete. Se puede salir del intérprete al esctibir "exit" y 
 presionar enter.
-A continuación se miestran algunos ejemplos de ejecuciones que se probaron y
+A continuación se muestran algunos ejemplos de ejecuciones que se probaron y
 funcionan bien. (Recordar que [2>&1 |] es denotado por [*]).
 
 Denotamos [A-Z] como programas ejecutables y [a-z] como archivos.
